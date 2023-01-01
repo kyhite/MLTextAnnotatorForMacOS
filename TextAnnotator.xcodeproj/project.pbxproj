@@ -12,6 +12,15 @@
 		4844EB522960D6CF002E3D0D /* WordToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACC2960AE490099CF33 /* WordToken.swift */; };
 		4844EB542961FCEE002E3D0D /* RegexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB532961FCEE002E3D0D /* RegexExtension.swift */; };
 		4844EB5629620BF5002E3D0D /* RegexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB532961FCEE002E3D0D /* RegexExtension.swift */; };
+		4844EB5729621C03002E3D0D /* RegexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB532961FCEE002E3D0D /* RegexExtension.swift */; };
+		4844EB5A29622B4D002E3D0D /* WordTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB5929622B4D002E3D0D /* WordTokenFactory.swift */; };
+		4844EB5D29622C5F002E3D0D /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB5C29622C5F002E3D0D /* FactoryProtocol.swift */; };
+		4844EB5E29622D5F002E3D0D /* WordTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB5929622B4D002E3D0D /* WordTokenFactory.swift */; };
+		4844EB5F29622D5F002E3D0D /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB5C29622C5F002E3D0D /* FactoryProtocol.swift */; };
+		4844EB6129622DE1002E3D0D /* CompositeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB6029622DE1002E3D0D /* CompositeFactory.swift */; };
+		4844EB6329622E40002E3D0D /* FactoryProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB6229622E40002E3D0D /* FactoryProduct.swift */; };
+		4844EB6429622EDD002E3D0D /* CompositeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB6029622DE1002E3D0D /* CompositeFactory.swift */; };
+		4844EB6529622EDD002E3D0D /* FactoryProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB6229622E40002E3D0D /* FactoryProduct.swift */; };
 		48B087FE295FB787006A661F /* TextAnnotatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FD295FB787006A661F /* TextAnnotatorApp.swift */; };
 		48B08800295FB787006A661F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FF295FB787006A661F /* Persistence.swift */; };
 		48B08803295FB787006A661F /* TextAnnotator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48B08801295FB787006A661F /* TextAnnotator.xcdatamodeld */; };
@@ -99,6 +108,10 @@
 /* Begin PBXFileReference section */
 		4844EB4B2960CDE7002E3D0D /* WrappingHStack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WrappingHStack; path = ../Dependencies/WrappingHStack; sourceTree = "<group>"; };
 		4844EB532961FCEE002E3D0D /* RegexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexExtension.swift; sourceTree = "<group>"; };
+		4844EB5929622B4D002E3D0D /* WordTokenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTokenFactory.swift; sourceTree = "<group>"; };
+		4844EB5C29622C5F002E3D0D /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
+		4844EB6029622DE1002E3D0D /* CompositeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeFactory.swift; sourceTree = "<group>"; };
+		4844EB6229622E40002E3D0D /* FactoryProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProduct.swift; sourceTree = "<group>"; };
 		48B087FA295FB787006A661F /* TextAnnotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnnotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B087FD295FB787006A661F /* TextAnnotatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorApp.swift; sourceTree = "<group>"; };
 		48B087FF295FB787006A661F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -215,6 +228,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4844EB5B29622C49002E3D0D /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				4844EB5929622B4D002E3D0D /* WordTokenFactory.swift */,
+				4844EB5C29622C5F002E3D0D /* FactoryProtocol.swift */,
+				4844EB6029622DE1002E3D0D /* CompositeFactory.swift */,
+				4844EB6229622E40002E3D0D /* FactoryProduct.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		48B087F1295FB787006A661F = {
 			isa = PBXGroup;
 			children = (
@@ -294,8 +318,9 @@
 				4844EB552961FD28002E3D0D /* Extensions */,
 				48BC4AC1295FB9210099CF33 /* LoadFiles.swift */,
 				48BC4ACE2960AF780099CF33 /* UserPreferences.swift */,
-				48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */,
 				48BC4ACC2960AE490099CF33 /* WordToken.swift */,
+				4844EB5B29622C49002E3D0D /* Factories */,
+				48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */,
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -612,14 +637,18 @@
 			files = (
 				48BC4AC82960A90E0099CF33 /* GetContentPage.swift in Sources */,
 				4844EB542961FCEE002E3D0D /* RegexExtension.swift in Sources */,
+				4844EB6329622E40002E3D0D /* FactoryProduct.swift in Sources */,
 				48B087FE295FB787006A661F /* TextAnnotatorApp.swift in Sources */,
 				48BC4AC52960A8AE0099CF33 /* ParseFiles.swift in Sources */,
 				48BC4ACD2960AE490099CF33 /* WordToken.swift in Sources */,
 				48BC4ACB2960AA3B0099CF33 /* Toolbar.swift in Sources */,
+				4844EB5A29622B4D002E3D0D /* WordTokenFactory.swift in Sources */,
 				48BC4ACF2960AF780099CF33 /* UserPreferences.swift in Sources */,
 				48BC4AC2295FB9210099CF33 /* LoadFiles.swift in Sources */,
 				48B08803295FB787006A661F /* TextAnnotator.xcdatamodeld in Sources */,
+				4844EB5D29622C5F002E3D0D /* FactoryProtocol.swift in Sources */,
 				48BC4AD12960B02E0099CF33 /* AddAnnotationHinter.swift in Sources */,
+				4844EB6129622DE1002E3D0D /* CompositeFactory.swift in Sources */,
 				48B08805295FB787006A661F /* ContentView.swift in Sources */,
 				48BC4AD42960B2170099CF33 /* Word_Token_View.swift in Sources */,
 				48B08800295FB787006A661F /* Persistence.swift in Sources */,
@@ -660,6 +689,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4844EB6429622EDD002E3D0D /* CompositeFactory.swift in Sources */,
+				4844EB6529622EDD002E3D0D /* FactoryProduct.swift in Sources */,
+				4844EB5E29622D5F002E3D0D /* WordTokenFactory.swift in Sources */,
+				4844EB5F29622D5F002E3D0D /* FactoryProtocol.swift in Sources */,
+				4844EB5729621C03002E3D0D /* RegexExtension.swift in Sources */,
 				48BC4B092960B9660099CF33 /* LoadFiles.swift in Sources */,
 				48BC4B0A2960B9660099CF33 /* UserPreferences.swift in Sources */,
 				48BC4B0B2960B9660099CF33 /* ParseFiles.swift in Sources */,

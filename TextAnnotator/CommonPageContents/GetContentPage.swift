@@ -7,20 +7,21 @@
 
 import SwiftUI
 import WrappingHStack
+//import WrappingHStack
 
 
 struct GetContentPage: View {
     var fromPath: String
-    @State var tokens: [WordToken] = []
+    @State var tokens: [UnsafeMutablePointer<WordToken>] = []
 //    let columns = [
 //        GridItem(.adaptive(minimum: 100))
 //        ]
     var body: some View {
         ScrollView{
 //            LazyHGrid(rows: columns, spacing:0){
-            WrappingHStack(tokens, spacing:.dynamic(minSpacing: 0)) {
-            token in Word_Token_View(token: token)
-            
+            WrappingHStack(tokens, spacing:.constant(5)) {
+                token in Word_Token_View(token: token)
+                                
 //                ForEach(tokens) { token in
 //                    Word_Token_View(token: token)
                 }

@@ -48,22 +48,16 @@ extension NSRegularExpression {
 }
 extension NSRegularExpression {
     static func splitWithDelims(pattern: String, fromString: String) -> [String] {
-        matches_ranges(pattern: pattern, fromString: fromString)
+//        matches_ranges(pattern: pattern, fromString: fromString)
         var matches = matches(reg: pattern,text: fromString)
+        var toString = fromString
         
-        var delims : [String] = [fromString]
         for match in matches {
-            var delim_new : [String] = []
-            for delim in delims {
-                var spl = delim.components(separatedBy: match).flatMap {
-                    $0 == "" ? [match] : [$0, match]
-                }.dropLast()
-
-
-                debugPrint(spl)
-            }
-            delims = delim_new
+            toString = toString.replacingOccurrences(of: match, with: preferences.regexDelimiter + match + preferences.regexDelimiter)
         }
+        
+        var delims : [String] = toString.components(separatedBy: preferences.regexDelimiter).filter { $0 != "" && $0 != " " }
+        
         return delims
     }
     

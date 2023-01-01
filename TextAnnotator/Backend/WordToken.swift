@@ -8,13 +8,29 @@
 import Foundation
 import SwiftUI
 
-class WordToken: Identifiable {
-    var text: String = ""
+class WordToken: FactoryProduct {
+    
+    var text: String = "this is a test"
+    var classtype : String = "wordtoken"
+    var id =  UUID()
     var foreground_color: Color = preferences.TextColorDefault
     var background_color: Color = preferences.TextColorDefault
     var annotations : [String] = [""]
-    var id =  UUID()
-//    var nextToken : UnsafeMutablePointer<WordToken>? = UnsafeMutablePointer<WordToken>(nil)
-//    var isSelected : Bool = false
+    var compositeFactory = CompositeFactory()
     
+    
+}
+
+extension WordToken {
+    func setText(txt: String) {
+        print(self.text)
+        self.text = txt
+    }
+    
+    func setForegroundColor(color: Color) {
+        self.foreground_color = color
+    }
+    func setBackgroundColor(color: Color) {
+        self.background_color = color
+    }
 }

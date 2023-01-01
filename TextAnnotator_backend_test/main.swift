@@ -17,7 +17,10 @@ print(fragments)
 let exp = "this is my fight song 1 singing all right wrong 2 "
 //let exp = "123.456.789"
 let expby = /(\.)/
+//let regExp = try! NSRegularExpression(pattern: "1")
+//let regExp = RegexComponent()
 
-let reg = NSRegularExpression(pattern: "(\\d)|(\\s)", options: )
-//print(NSRegularExpression.splitWithDelims(pattern: "(\\d)|(\\s)", fromString: exp))
+//exp.replacingOccurrences(of: "1", with: "REGEX1")
+//print(exp.replacing(/1/, with: "REGEX1"))
+print(NSRegularExpression.splitWithDelims(pattern: "(\\d)|(\\s)", fromString: exp))
 

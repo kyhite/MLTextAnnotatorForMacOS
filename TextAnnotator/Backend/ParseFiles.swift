@@ -17,43 +17,37 @@ class FileParser {
         
         return token
     }
-    public static func parseText(str: String) -> [WordToken]{
-//        var new_dict : [[String:[String: Color]]] = [[str: ["background_color": preferences.BackgroundColorDefault, "foreground_color": preferences.TextColorDefault]]]
-//        var newDictTwo :[[String:[String: Color]]] = []
-//        for (key, value) in preferences.Annotations {
-//
-//            for ne in new_dict {
-//                for (key2, value2) in ne {
-//                    let ne_new = splitApart(str:key2,reg: key, colors:value2, new_back: value)
-//                    for nee in ne_new {
-//                        newDictTwo.append(nee)
-//
-//                    }
-//                }
-//            }
-//            new_dict = newDictTwo
-//
-//
-//        }
-            
-            
-            
-        var components = str.components(separatedBy: " ")
+    public static func parseText(str: String) -> [UnsafeMutablePointer<WordToken>]{
+        //https://stackoverflow.com/questions/26386093/array-from-dictionary-keys-in-swift
+        let annotationString = Array(preferences.Annotations.keys)
+        var components = str.components(separatedBy: " ").filter { $0 != "" && $0 != " " }
         
-        var tokens : [WordToken] = []
-        for c in components {
-            var new_token = WordToken()
-            new_token.text = c
+        var tokens : [UnsafeMutablePointer<WordToken>] = []
+        
+        for component in components {
+            var new_token = preferences.makeNewProduct(productType: "wordtoken", text: "hi")
+            
+            
+            for (key, val) in preferences.Annotations {
+                
+                let matches = NSRegularExpression.matches(reg: key.lowercased(), text: component.lowercased())
+                if matches.count > 0 {
+                    new_token.pointee.foreground_color = val
+                    
+                }
+                
+                
+            }
             tokens.append(new_token)
         }
         
         return tokens
     }
     
-    public static func parseText(fromPath: String) -> [WordToken]{
-        let str : String = AnnotationFileLoader.ReadTextFile(p: fromPath)
-        let tokens: [WordToken] = parseText(str: str)
-        return tokens
-    }
+//    public static func parseText(fromPath: String) -> [WordToken]{
+//        let str : String = AnnotationFileLoader.ReadTextFile(p: fromPath)
+//        let tokens: [WordToken] = parseText(str: str)
+//        return tokens
+//    }
     
 }
