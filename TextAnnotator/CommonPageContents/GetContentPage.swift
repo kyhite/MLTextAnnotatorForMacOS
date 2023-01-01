@@ -10,26 +10,26 @@ import WrappingHStack
 
 
 struct GetContentPage: View {
-    var fromPath: String
+    @State var fromPath: String
+    @State var textField: String = "blank"
     @State var tokens: [WordToken] = []
 //    let columns = [
 //        GridItem(.adaptive(minimum: 100))
 //        ]
     var body: some View {
         ScrollView{
-
-            WrappingHStack(tokens) {token in
-                Word_Token_View(token: token)
+            //            .
+            //            Text(fromPath)
+            VStack{
+                TextEditor(text: $fromPath)
             }
-        .onAppear {
-                self.tokens = FileParser.parseText(str: fromPath)
-                print(self.tokens.count)
-            }
+            
+        }.onAppear {
+            tokens = FileParser.parseText(str: fromPath)
             
             
         }
     }
-    
 }
 
 struct GetContentPage_Previews: PreviewProvider {

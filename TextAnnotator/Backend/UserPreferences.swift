@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class UserPreferences {
-    var Annotations : [String:String] = [:]
+    var Annotations : [String:Color] = ["\\d":Color.red]
     var TextColorDefault = Color.black
     var BackgroundColorDefault = Color.clear
     var TextSpacing: CGFloat = 100.0

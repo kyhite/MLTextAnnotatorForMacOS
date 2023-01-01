@@ -6,8 +6,21 @@
 //
 
 import Foundation
+import SwiftUI
 
 
+var classes = AnnotationFileLoader.ReadTextFile(p: "/Users/kyanaburhite/Downloads/18.txt")
+var colu = [[classes: ["foreground_color": Color.green, "background_color": Color.red]]]
+var matched = NSRegularExpression.matches(reg: "\\d" ,text: classes)
 
-var classes = AnnotationFileLoader.ReadTextFile(p: "/Volumes/micro/be_free/Class Dump/Fall2021/R/R_Dump_1/Final_Project/Datasets/AllTranscripts/AAG/5.txt")
-print(classes)
+var matchedSet = Set(matched)
+
+for m in matchedSet {
+    var colu_split : [[String: [String: Color]]]
+    for col in colu {
+        for (key, val) in col {
+            var key_spl = key.components(separatedBy: m)
+        }
+    }
+}
+print(matchedSet)
