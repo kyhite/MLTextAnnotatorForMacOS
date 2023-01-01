@@ -14,5 +14,7 @@ class WordToken: Identifiable {
     var background_color: Color = preferences.TextColorDefault
     var annotations : [String] = [""]
     var id =  UUID()
+//    var nextToken : UnsafeMutablePointer<WordToken>? = UnsafeMutablePointer<WordToken>(nil)
+//    var isSelected : Bool = false
     
 }

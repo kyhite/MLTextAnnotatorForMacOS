@@ -12,14 +12,14 @@ struct Word_Token_View: View {
     var body: some View {
 //        Button {
 //            print(token.text)
-//
-//        } label: {
-        Text(token.text).padding( 5)
-            .foregroundColor(token.foreground_color).background(token.background_color)
             
-            .lineLimit(1)
-//            .padding(.trailing,CGFloat(token.text.count * 10) + 40)
-            .allowsTightening(false)
+//        } label: {
+        Text(token.text).foregroundColor(token.foreground_color).lineLimit(1, reservesSpace: true)
+
+//            .padding(20).foregroundColor(Color.yellow).background(Color.blue).lineLimit(1, reservesSpace: true)
+        
+                                                                              
+                                                                              
 //        }
 
 //        Text(token.text).foregroundColor(Color.yellow).background(Color.blue).padding(20)

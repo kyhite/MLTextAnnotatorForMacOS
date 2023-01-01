@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4844EB492960BF89002E3D0D /* ForEachWordTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB482960BF89002E3D0D /* ForEachWordTokenView.swift */; };
 		4844EB4E2960CF1A002E3D0D /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 4844EB4D2960CF1A002E3D0D /* WrappingHStack */; };
 		4844EB512960D6CF002E3D0D /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACE2960AF780099CF33 /* UserPreferences.swift */; };
 		4844EB522960D6CF002E3D0D /* WordToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACC2960AE490099CF33 /* WordToken.swift */; };
+		4844EB542961FCEE002E3D0D /* RegexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB532961FCEE002E3D0D /* RegexExtension.swift */; };
+		4844EB5629620BF5002E3D0D /* RegexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB532961FCEE002E3D0D /* RegexExtension.swift */; };
 		48B087FE295FB787006A661F /* TextAnnotatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FD295FB787006A661F /* TextAnnotatorApp.swift */; };
 		48B08800295FB787006A661F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FF295FB787006A661F /* Persistence.swift */; };
 		48B08803295FB787006A661F /* TextAnnotator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48B08801295FB787006A661F /* TextAnnotator.xcdatamodeld */; };
@@ -96,8 +97,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4844EB482960BF89002E3D0D /* ForEachWordTokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachWordTokenView.swift; sourceTree = "<group>"; };
 		4844EB4B2960CDE7002E3D0D /* WrappingHStack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WrappingHStack; path = ../Dependencies/WrappingHStack; sourceTree = "<group>"; };
+		4844EB532961FCEE002E3D0D /* RegexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexExtension.swift; sourceTree = "<group>"; };
 		48B087FA295FB787006A661F /* TextAnnotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnnotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B087FD295FB787006A661F /* TextAnnotatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorApp.swift; sourceTree = "<group>"; };
 		48B087FF295FB787006A661F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -206,6 +207,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4844EB552961FD28002E3D0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4844EB532961FCEE002E3D0D /* RegexExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		48B087F1295FB787006A661F = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +291,7 @@
 		48BC4AB5295FB85D0099CF33 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				4844EB552961FD28002E3D0D /* Extensions */,
 				48BC4AC1295FB9210099CF33 /* LoadFiles.swift */,
 				48BC4ACE2960AF780099CF33 /* UserPreferences.swift */,
 				48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */,
@@ -312,7 +322,6 @@
 			isa = PBXGroup;
 			children = (
 				48BC4AD32960B2170099CF33 /* Word_Token_View.swift */,
-				4844EB482960BF89002E3D0D /* ForEachWordTokenView.swift */,
 			);
 			path = Tokens;
 			sourceTree = "<group>";
@@ -602,8 +611,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				48BC4AC82960A90E0099CF33 /* GetContentPage.swift in Sources */,
+				4844EB542961FCEE002E3D0D /* RegexExtension.swift in Sources */,
 				48B087FE295FB787006A661F /* TextAnnotatorApp.swift in Sources */,
-				4844EB492960BF89002E3D0D /* ForEachWordTokenView.swift in Sources */,
 				48BC4AC52960A8AE0099CF33 /* ParseFiles.swift in Sources */,
 				48BC4ACD2960AE490099CF33 /* WordToken.swift in Sources */,
 				48BC4ACB2960AA3B0099CF33 /* Toolbar.swift in Sources */,
@@ -638,6 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4844EB5629620BF5002E3D0D /* RegexExtension.swift in Sources */,
 				4844EB512960D6CF002E3D0D /* UserPreferences.swift in Sources */,
 				4844EB522960D6CF002E3D0D /* WordToken.swift in Sources */,
 				48BC4AC62960A8CE0099CF33 /* ParseFiles.swift in Sources */,

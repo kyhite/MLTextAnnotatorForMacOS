@@ -10,26 +10,31 @@ import WrappingHStack
 
 
 struct GetContentPage: View {
-    @State var fromPath: String
-    @State var textField: String = "blank"
+    var fromPath: String
     @State var tokens: [WordToken] = []
 //    let columns = [
 //        GridItem(.adaptive(minimum: 100))
 //        ]
     var body: some View {
         ScrollView{
-            //            .
-            //            Text(fromPath)
-            VStack{
-                TextEditor(text: $fromPath)
+//            LazyHGrid(rows: columns, spacing:0){
+            WrappingHStack(tokens, spacing:.dynamic(minSpacing: 0)) {
+            token in Word_Token_View(token: token)
+            
+//                ForEach(tokens) { token in
+//                    Word_Token_View(token: token)
+                }
+        }.lineLimit(nil)
+//            .frame(height: 300)
+        .onAppear {
+                self.tokens = FileParser.parseText(str: fromPath)
+                print(self.tokens.count)
             }
             
-        }.onAppear {
-            tokens = FileParser.parseText(str: fromPath)
             
-            
-        }
+//        }
     }
+    
 }
 
 struct GetContentPage_Previews: PreviewProvider {
