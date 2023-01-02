@@ -25,7 +25,7 @@ class FileParser {
         var tokens : [UnsafeMutablePointer<WordToken>] = []
         
         for component in components {
-            var new_token = preferences.makeNewProduct(productType: "wordtoken", text: "hi")
+            var new_token = preferences.makeNewProduct(productType: "wordtoken", text: component)
             
             
             for (key, val) in preferences.Annotations {
@@ -44,10 +44,19 @@ class FileParser {
         return tokens
     }
     
-//    public static func parseText(fromPath: String) -> [WordToken]{
-//        let str : String = AnnotationFileLoader.ReadTextFile(p: fromPath)
-//        let tokens: [WordToken] = parseText(str: str)
-//        return tokens
-//    }
-    
 }
+
+/**class water
+                {hotdog}
+                jezebel
+ 
+ 
+ 
+ class Jezebel:
+    water: HotDog()
+ 
+ class Water:
+ 
+ class HotDog(Water) :
+    
+ **/
