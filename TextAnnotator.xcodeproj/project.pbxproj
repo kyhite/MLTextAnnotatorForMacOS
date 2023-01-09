@@ -7,59 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4844EB4E2960CF1A002E3D0D /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 4844EB4D2960CF1A002E3D0D /* WrappingHStack */; };
+		481463AD296A6BA500713721 /* TokenWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463AC296A6BA500713721 /* TokenWebView.swift */; };
+		481463AE296A6BA500713721 /* TokenWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463AC296A6BA500713721 /* TokenWebView.swift */; };
+		481463AF296A6BA500713721 /* TokenWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463AC296A6BA500713721 /* TokenWebView.swift */; };
+		481463BE296A715900713721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463BD296A715900713721 /* ContentView.swift */; };
+		481463BF296A715900713721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463BD296A715900713721 /* ContentView.swift */; };
+		481463C0296A715900713721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463BD296A715900713721 /* ContentView.swift */; };
+		481463D1296A7C0900713721 /* MacTextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463D0296A7C0900713721 /* MacTextApp.swift */; };
+		481463D5296A7C0A00713721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481463D4296A7C0A00713721 /* Assets.xcassets */; };
+		481463D8296A7C0A00713721 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481463D7296A7C0A00713721 /* Preview Assets.xcassets */; };
+		481463DD296A7C5D00713721 /* TokenWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463AC296A6BA500713721 /* TokenWebView.swift */; };
+		481463DE296A7C5D00713721 /* LoadFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC1295FB9210099CF33 /* LoadFiles.swift */; };
+		481463DF296A7C5D00713721 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACE2960AF780099CF33 /* UserPreferences.swift */; };
+		481463E0296A7C5D00713721 /* ParseFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */; };
+		481463E2296A7C5D00713721 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FF295FB787006A661F /* Persistence.swift */; };
+		481463E7296A7C5D00713721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481463BD296A715900713721 /* ContentView.swift */; };
+		481463EA296A7CD200713721 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 481463E9296A7CD200713721 /* index.html */; };
+		481463EB296A7CD200713721 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 481463E9296A7CD200713721 /* index.html */; };
+		481463EC296A7CD200713721 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 481463E9296A7CD200713721 /* index.html */; };
+		481463ED296A7CD200713721 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 481463E9296A7CD200713721 /* index.html */; };
 		4844EB512960D6CF002E3D0D /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACE2960AF780099CF33 /* UserPreferences.swift */; };
-		4844EB522960D6CF002E3D0D /* WordToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACC2960AE490099CF33 /* WordToken.swift */; };
-		4844EB542961FCEE002E3D0D /* RegexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB532961FCEE002E3D0D /* RegexExtension.swift */; };
-		4844EB5629620BF5002E3D0D /* RegexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB532961FCEE002E3D0D /* RegexExtension.swift */; };
-		4844EB5729621C03002E3D0D /* RegexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB532961FCEE002E3D0D /* RegexExtension.swift */; };
-		4844EB5A29622B4D002E3D0D /* WordTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB5929622B4D002E3D0D /* WordTokenFactory.swift */; };
-		4844EB5D29622C5F002E3D0D /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB5C29622C5F002E3D0D /* FactoryProtocol.swift */; };
-		4844EB5E29622D5F002E3D0D /* WordTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB5929622B4D002E3D0D /* WordTokenFactory.swift */; };
-		4844EB5F29622D5F002E3D0D /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB5C29622C5F002E3D0D /* FactoryProtocol.swift */; };
-		4844EB6129622DE1002E3D0D /* CompositeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB6029622DE1002E3D0D /* CompositeFactory.swift */; };
-		4844EB6329622E40002E3D0D /* FactoryProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB6229622E40002E3D0D /* FactoryProduct.swift */; };
-		4844EB6429622EDD002E3D0D /* CompositeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB6029622DE1002E3D0D /* CompositeFactory.swift */; };
-		4844EB6529622EDD002E3D0D /* FactoryProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844EB6229622E40002E3D0D /* FactoryProduct.swift */; };
+		4882A522296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
+		4882A523296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
+		4882A524296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
+		4882A525296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
+		4882A526296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
+		4882A528296AAEAE005D672E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4882A527296AAEAE005D672E /* JavaScriptCore.framework */; };
 		48B087FE295FB787006A661F /* TextAnnotatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FD295FB787006A661F /* TextAnnotatorApp.swift */; };
 		48B08800295FB787006A661F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FF295FB787006A661F /* Persistence.swift */; };
 		48B08803295FB787006A661F /* TextAnnotator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48B08801295FB787006A661F /* TextAnnotator.xcdatamodeld */; };
-		48B08805295FB787006A661F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B08804295FB787006A661F /* ContentView.swift */; };
 		48B08807295FB78A006A661F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B08806295FB78A006A661F /* Assets.xcassets */; };
 		48B0880B295FB78A006A661F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B0880A295FB78A006A661F /* Preview Assets.xcassets */; };
-		48B08815295FB78A006A661F /* TextAnnotatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B08814295FB78A006A661F /* TextAnnotatorTests.swift */; };
-		48B0881F295FB78A006A661F /* TextAnnotatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0881E295FB78A006A661F /* TextAnnotatorUITests.swift */; };
-		48B08821295FB78A006A661F /* TextAnnotatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B08820295FB78A006A661F /* TextAnnotatorUITestsLaunchTests.swift */; };
-		48BC4AB4295FB8090099CF33 /* ContentViewDump.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BC4AB3295FB8090099CF33 /* ContentViewDump.txt */; };
 		48BC4ABD295FB8CE0099CF33 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ABC295FB8CE0099CF33 /* main.swift */; };
 		48BC4AC2295FB9210099CF33 /* LoadFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC1295FB9210099CF33 /* LoadFiles.swift */; };
 		48BC4AC32960A3F80099CF33 /* LoadFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC1295FB9210099CF33 /* LoadFiles.swift */; };
 		48BC4AC52960A8AE0099CF33 /* ParseFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */; };
 		48BC4AC62960A8CE0099CF33 /* ParseFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */; };
-		48BC4AC82960A90E0099CF33 /* GetContentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC72960A90E0099CF33 /* GetContentPage.swift */; };
-		48BC4ACB2960AA3B0099CF33 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACA2960AA3B0099CF33 /* Toolbar.swift */; };
-		48BC4ACD2960AE490099CF33 /* WordToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACC2960AE490099CF33 /* WordToken.swift */; };
 		48BC4ACF2960AF780099CF33 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACE2960AF780099CF33 /* UserPreferences.swift */; };
-		48BC4AD12960B02E0099CF33 /* AddAnnotationHinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AD02960B02E0099CF33 /* AddAnnotationHinter.swift */; };
-		48BC4AD42960B2170099CF33 /* Word_Token_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AD32960B2170099CF33 /* Word_Token_View.swift */; };
-		48BC4AE02960B9190099CF33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48BC4ADF2960B9190099CF33 /* Assets.xcassets */; };
-		48BC4AE32960B9190099CF33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48BC4AE22960B9190099CF33 /* Preview Assets.xcassets */; };
-		48BC4AF32960B9190099CF33 /* TextAnnotatorMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AF22960B9190099CF33 /* TextAnnotatorMacTests.swift */; };
-		48BC4AFD2960B9190099CF33 /* TextAnnotatorMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AFC2960B9190099CF33 /* TextAnnotatorMacUITests.swift */; };
-		48BC4AFF2960B9190099CF33 /* TextAnnotatorMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AFE2960B9190099CF33 /* TextAnnotatorMacUITestsLaunchTests.swift */; };
-		48BC4B092960B9660099CF33 /* LoadFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC1295FB9210099CF33 /* LoadFiles.swift */; };
-		48BC4B0A2960B9660099CF33 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACE2960AF780099CF33 /* UserPreferences.swift */; };
-		48BC4B0B2960B9660099CF33 /* ParseFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */; };
-		48BC4B0C2960B9660099CF33 /* WordToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACC2960AE490099CF33 /* WordToken.swift */; };
-		48BC4B0D2960B9660099CF33 /* TextAnnotatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FD295FB787006A661F /* TextAnnotatorApp.swift */; };
-		48BC4B0E2960B9660099CF33 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B087FF295FB787006A661F /* Persistence.swift */; };
-		48BC4B0F2960B9660099CF33 /* ContentViewDump.txt in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AB3295FB8090099CF33 /* ContentViewDump.txt */; };
-		48BC4B102960B9660099CF33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B08804295FB787006A661F /* ContentView.swift */; };
-		48BC4B112960B9660099CF33 /* Word_Token_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AD32960B2170099CF33 /* Word_Token_View.swift */; };
-		48BC4B122960B9660099CF33 /* GetContentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AC72960A90E0099CF33 /* GetContentPage.swift */; };
-		48BC4B132960B9660099CF33 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4ACA2960AA3B0099CF33 /* Toolbar.swift */; };
-		48BC4B142960B9660099CF33 /* AddAnnotationHinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4AD02960B02E0099CF33 /* AddAnnotationHinter.swift */; };
-		48BC4B172960B9660099CF33 /* TextAnnotator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48B08801295FB787006A661F /* TextAnnotator.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,20 +61,6 @@
 			remoteGlobalIDString = 48B087F9295FB787006A661F;
 			remoteInfo = TextAnnotator;
 		};
-		48BC4AEF2960B9190099CF33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48B087F2295FB787006A661F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48BC4AD82960B9160099CF33;
-			remoteInfo = TextAnnotatorMac;
-		};
-		48BC4AF92960B9190099CF33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48B087F2295FB787006A661F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48BC4AD82960B9160099CF33;
-			remoteInfo = TextAnnotatorMac;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,52 +76,43 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		481463AC296A6BA500713721 /* TokenWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenWebView.swift; sourceTree = "<group>"; };
+		481463BD296A715900713721 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		481463CE296A7C0900713721 /* MacText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		481463D0296A7C0900713721 /* MacTextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacTextApp.swift; sourceTree = "<group>"; };
+		481463D4296A7C0A00713721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		481463D7296A7C0A00713721 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		481463D9296A7C0A00713721 /* MacText.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacText.entitlements; sourceTree = "<group>"; };
+		481463E9296A7CD200713721 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		4844EB4B2960CDE7002E3D0D /* WrappingHStack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WrappingHStack; path = ../Dependencies/WrappingHStack; sourceTree = "<group>"; };
-		4844EB532961FCEE002E3D0D /* RegexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexExtension.swift; sourceTree = "<group>"; };
-		4844EB5929622B4D002E3D0D /* WordTokenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTokenFactory.swift; sourceTree = "<group>"; };
-		4844EB5C29622C5F002E3D0D /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
-		4844EB6029622DE1002E3D0D /* CompositeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeFactory.swift; sourceTree = "<group>"; };
-		4844EB6229622E40002E3D0D /* FactoryProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProduct.swift; sourceTree = "<group>"; };
+		4844EC8029675CB7002E3D0D /* HighlightedTextEditor */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = HighlightedTextEditor; path = ../Dependencies/HighlightedTextEditor; sourceTree = "<group>"; };
+		4882A521296A9D39005D672E /* LazyGlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGlobalVars.swift; sourceTree = "<group>"; };
+		4882A527296AAEAE005D672E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		48B087FA295FB787006A661F /* TextAnnotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnnotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B087FD295FB787006A661F /* TextAnnotatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorApp.swift; sourceTree = "<group>"; };
 		48B087FF295FB787006A661F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		48B08802295FB787006A661F /* TextAnnotator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TextAnnotator.xcdatamodel; sourceTree = "<group>"; };
-		48B08804295FB787006A661F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		48B08806295FB78A006A661F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B08808295FB78A006A661F /* TextAnnotator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextAnnotator.entitlements; sourceTree = "<group>"; };
 		48B0880A295FB78A006A661F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48B08810295FB78A006A661F /* TextAnnotatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAnnotatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48B08814295FB78A006A661F /* TextAnnotatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorTests.swift; sourceTree = "<group>"; };
 		48B0881A295FB78A006A661F /* TextAnnotatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAnnotatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48B0881E295FB78A006A661F /* TextAnnotatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorUITests.swift; sourceTree = "<group>"; };
-		48B08820295FB78A006A661F /* TextAnnotatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		48BC4AB3295FB8090099CF33 /* ContentViewDump.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ContentViewDump.txt; sourceTree = "<group>"; };
 		48BC4ABA295FB8CE0099CF33 /* TextAnnotator_backend_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TextAnnotator_backend_test; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BC4ABC295FB8CE0099CF33 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		48BC4AC1295FB9210099CF33 /* LoadFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFiles.swift; sourceTree = "<group>"; };
 		48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseFiles.swift; sourceTree = "<group>"; };
-		48BC4AC72960A90E0099CF33 /* GetContentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContentPage.swift; sourceTree = "<group>"; };
-		48BC4ACA2960AA3B0099CF33 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
-		48BC4ACC2960AE490099CF33 /* WordToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordToken.swift; sourceTree = "<group>"; };
 		48BC4ACE2960AF780099CF33 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
-		48BC4AD02960B02E0099CF33 /* AddAnnotationHinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnnotationHinter.swift; sourceTree = "<group>"; };
-		48BC4AD32960B2170099CF33 /* Word_Token_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_Token_View.swift; sourceTree = "<group>"; };
-		48BC4AD92960B9160099CF33 /* TextAnnotatorMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnnotatorMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		48BC4ADB2960B9160099CF33 /* TextAnnotatorMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorMacApp.swift; sourceTree = "<group>"; };
-		48BC4ADD2960B9160099CF33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		48BC4ADF2960B9190099CF33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		48BC4AE22960B9190099CF33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		48BC4AE42960B9190099CF33 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		48BC4AE72960B9190099CF33 /* TextAnnotatorMac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TextAnnotatorMac.xcdatamodel; sourceTree = "<group>"; };
-		48BC4AE92960B9190099CF33 /* TextAnnotatorMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextAnnotatorMac.entitlements; sourceTree = "<group>"; };
-		48BC4AEE2960B9190099CF33 /* TextAnnotatorMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAnnotatorMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48BC4AF22960B9190099CF33 /* TextAnnotatorMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorMacTests.swift; sourceTree = "<group>"; };
-		48BC4AF82960B9190099CF33 /* TextAnnotatorMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAnnotatorMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48BC4AFC2960B9190099CF33 /* TextAnnotatorMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorMacUITests.swift; sourceTree = "<group>"; };
-		48BC4AFE2960B9190099CF33 /* TextAnnotatorMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnnotatorMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		481463CB296A7C0900713721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4882A528296AAEAE005D672E /* JavaScriptCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48B087F7295FB787006A661F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,35 +141,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48BC4AD62960B9160099CF33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4844EB4E2960CF1A002E3D0D /* WrappingHStack in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BC4AEB2960B9190099CF33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BC4AF52960B9190099CF33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		481463AB296A6B8600713721 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				481463AC296A6BA500713721 /* TokenWebView.swift */,
+				4882A521296A9D39005D672E /* LazyGlobalVars.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		481463CF296A7C0900713721 /* MacText */ = {
+			isa = PBXGroup;
+			children = (
+				481463D0296A7C0900713721 /* MacTextApp.swift */,
+				481463D4296A7C0A00713721 /* Assets.xcassets */,
+				481463D9296A7C0A00713721 /* MacText.entitlements */,
+				481463D6296A7C0A00713721 /* Preview Content */,
+			);
+			path = MacText;
+			sourceTree = "<group>";
+		};
+		481463D6296A7C0A00713721 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4882A520296A8E5D005D672E /* Website */,
+				481463D7296A7C0A00713721 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4844EB4A2960CDE7002E3D0D /* Packages */ = {
 			isa = PBXGroup;
 			children = (
 				4844EB4B2960CDE7002E3D0D /* WrappingHStack */,
+				4844EC8029675CB7002E3D0D /* HighlightedTextEditor */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -216,6 +185,7 @@
 		4844EB4C2960CF1A002E3D0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4882A527296AAEAE005D672E /* JavaScriptCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,20 +193,16 @@
 		4844EB552961FD28002E3D0D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4844EB532961FCEE002E3D0D /* RegexExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		4844EB5B29622C49002E3D0D /* Factories */ = {
+		4882A520296A8E5D005D672E /* Website */ = {
 			isa = PBXGroup;
 			children = (
-				4844EB5929622B4D002E3D0D /* WordTokenFactory.swift */,
-				4844EB5C29622C5F002E3D0D /* FactoryProtocol.swift */,
-				4844EB6029622DE1002E3D0D /* CompositeFactory.swift */,
-				4844EB6229622E40002E3D0D /* FactoryProduct.swift */,
+				481463E9296A7CD200713721 /* index.html */,
 			);
-			path = Factories;
+			path = Website;
 			sourceTree = "<group>";
 		};
 		48B087F1295FB787006A661F = {
@@ -244,12 +210,8 @@
 			children = (
 				4844EB4A2960CDE7002E3D0D /* Packages */,
 				48B087FC295FB787006A661F /* TextAnnotator */,
-				48B08813295FB78A006A661F /* TextAnnotatorTests */,
-				48B0881D295FB78A006A661F /* TextAnnotatorUITests */,
 				48BC4ABB295FB8CE0099CF33 /* TextAnnotator_backend_test */,
-				48BC4ADA2960B9160099CF33 /* TextAnnotatorMac */,
-				48BC4AF12960B9190099CF33 /* TextAnnotatorMacTests */,
-				48BC4AFB2960B9190099CF33 /* TextAnnotatorMacUITests */,
+				481463CF296A7C0900713721 /* MacText */,
 				48B087FB295FB787006A661F /* Products */,
 				4844EB4C2960CF1A002E3D0D /* Frameworks */,
 			);
@@ -262,9 +224,7 @@
 				48B08810295FB78A006A661F /* TextAnnotatorTests.xctest */,
 				48B0881A295FB78A006A661F /* TextAnnotatorUITests.xctest */,
 				48BC4ABA295FB8CE0099CF33 /* TextAnnotator_backend_test */,
-				48BC4AD92960B9160099CF33 /* TextAnnotatorMac.app */,
-				48BC4AEE2960B9190099CF33 /* TextAnnotatorMacTests.xctest */,
-				48BC4AF82960B9190099CF33 /* TextAnnotatorMacUITests.xctest */,
+				481463CE296A7C0900713721 /* MacText.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,16 +232,14 @@
 		48B087FC295FB787006A661F /* TextAnnotator */ = {
 			isa = PBXGroup;
 			children = (
+				481463AB296A6B8600713721 /* Web */,
 				48BC4AB5295FB85D0099CF33 /* Backend */,
 				48B087FD295FB787006A661F /* TextAnnotatorApp.swift */,
 				48B087FF295FB787006A661F /* Persistence.swift */,
-				48BC4AB3295FB8090099CF33 /* ContentViewDump.txt */,
-				48B08804295FB787006A661F /* ContentView.swift */,
-				48BC4AD22960B2010099CF33 /* Tokens */,
-				48BC4AC92960A9630099CF33 /* CommonPageContents */,
 				48B08806295FB78A006A661F /* Assets.xcassets */,
 				48B08808295FB78A006A661F /* TextAnnotator.entitlements */,
 				48B08801295FB787006A661F /* TextAnnotator.xcdatamodeld */,
+				481463BD296A715900713721 /* ContentView.swift */,
 				48B08809295FB78A006A661F /* Preview Content */,
 			);
 			path = TextAnnotator;
@@ -295,31 +253,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		48B08813295FB78A006A661F /* TextAnnotatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				48B08814295FB78A006A661F /* TextAnnotatorTests.swift */,
-			);
-			path = TextAnnotatorTests;
-			sourceTree = "<group>";
-		};
-		48B0881D295FB78A006A661F /* TextAnnotatorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				48B0881E295FB78A006A661F /* TextAnnotatorUITests.swift */,
-				48B08820295FB78A006A661F /* TextAnnotatorUITestsLaunchTests.swift */,
-			);
-			path = TextAnnotatorUITests;
-			sourceTree = "<group>";
-		};
 		48BC4AB5295FB85D0099CF33 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
 				4844EB552961FD28002E3D0D /* Extensions */,
 				48BC4AC1295FB9210099CF33 /* LoadFiles.swift */,
 				48BC4ACE2960AF780099CF33 /* UserPreferences.swift */,
-				48BC4ACC2960AE490099CF33 /* WordToken.swift */,
-				4844EB5B29622C49002E3D0D /* Factories */,
 				48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */,
 			);
 			path = Backend;
@@ -333,66 +272,26 @@
 			path = TextAnnotator_backend_test;
 			sourceTree = "<group>";
 		};
-		48BC4AC92960A9630099CF33 /* CommonPageContents */ = {
-			isa = PBXGroup;
-			children = (
-				48BC4AC72960A90E0099CF33 /* GetContentPage.swift */,
-				48BC4ACA2960AA3B0099CF33 /* Toolbar.swift */,
-				48BC4AD02960B02E0099CF33 /* AddAnnotationHinter.swift */,
-			);
-			path = CommonPageContents;
-			sourceTree = "<group>";
-		};
-		48BC4AD22960B2010099CF33 /* Tokens */ = {
-			isa = PBXGroup;
-			children = (
-				48BC4AD32960B2170099CF33 /* Word_Token_View.swift */,
-			);
-			path = Tokens;
-			sourceTree = "<group>";
-		};
-		48BC4ADA2960B9160099CF33 /* TextAnnotatorMac */ = {
-			isa = PBXGroup;
-			children = (
-				48BC4ADB2960B9160099CF33 /* TextAnnotatorMacApp.swift */,
-				48BC4ADD2960B9160099CF33 /* ContentView.swift */,
-				48BC4ADF2960B9190099CF33 /* Assets.xcassets */,
-				48BC4AE42960B9190099CF33 /* Persistence.swift */,
-				48BC4AE92960B9190099CF33 /* TextAnnotatorMac.entitlements */,
-				48BC4AE62960B9190099CF33 /* TextAnnotatorMac.xcdatamodeld */,
-				48BC4AE12960B9190099CF33 /* Preview Content */,
-			);
-			path = TextAnnotatorMac;
-			sourceTree = "<group>";
-		};
-		48BC4AE12960B9190099CF33 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				48BC4AE22960B9190099CF33 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		48BC4AF12960B9190099CF33 /* TextAnnotatorMacTests */ = {
-			isa = PBXGroup;
-			children = (
-				48BC4AF22960B9190099CF33 /* TextAnnotatorMacTests.swift */,
-			);
-			path = TextAnnotatorMacTests;
-			sourceTree = "<group>";
-		};
-		48BC4AFB2960B9190099CF33 /* TextAnnotatorMacUITests */ = {
-			isa = PBXGroup;
-			children = (
-				48BC4AFC2960B9190099CF33 /* TextAnnotatorMacUITests.swift */,
-				48BC4AFE2960B9190099CF33 /* TextAnnotatorMacUITestsLaunchTests.swift */,
-			);
-			path = TextAnnotatorMacUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		481463CD296A7C0900713721 /* MacText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 481463DA296A7C0A00713721 /* Build configuration list for PBXNativeTarget "MacText" */;
+			buildPhases = (
+				481463CA296A7C0900713721 /* Sources */,
+				481463CB296A7C0900713721 /* Frameworks */,
+				481463CC296A7C0900713721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacText;
+			productName = MacText;
+			productReference = 481463CE296A7C0900713721 /* MacText.app */;
+			productType = "com.apple.product-type.application";
+		};
 		48B087F9295FB787006A661F /* TextAnnotator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48B08824295FB78A006A661F /* Build configuration list for PBXNativeTarget "TextAnnotator" */;
@@ -463,62 +362,6 @@
 			productReference = 48BC4ABA295FB8CE0099CF33 /* TextAnnotator_backend_test */;
 			productType = "com.apple.product-type.tool";
 		};
-		48BC4AD82960B9160099CF33 /* TextAnnotatorMac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48BC4B002960B9190099CF33 /* Build configuration list for PBXNativeTarget "TextAnnotatorMac" */;
-			buildPhases = (
-				48BC4AD52960B9160099CF33 /* Sources */,
-				48BC4AD62960B9160099CF33 /* Frameworks */,
-				48BC4AD72960B9160099CF33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TextAnnotatorMac;
-			packageProductDependencies = (
-				4844EB4D2960CF1A002E3D0D /* WrappingHStack */,
-			);
-			productName = TextAnnotatorMac;
-			productReference = 48BC4AD92960B9160099CF33 /* TextAnnotatorMac.app */;
-			productType = "com.apple.product-type.application";
-		};
-		48BC4AED2960B9190099CF33 /* TextAnnotatorMacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48BC4B032960B9190099CF33 /* Build configuration list for PBXNativeTarget "TextAnnotatorMacTests" */;
-			buildPhases = (
-				48BC4AEA2960B9190099CF33 /* Sources */,
-				48BC4AEB2960B9190099CF33 /* Frameworks */,
-				48BC4AEC2960B9190099CF33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				48BC4AF02960B9190099CF33 /* PBXTargetDependency */,
-			);
-			name = TextAnnotatorMacTests;
-			productName = TextAnnotatorMacTests;
-			productReference = 48BC4AEE2960B9190099CF33 /* TextAnnotatorMacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		48BC4AF72960B9190099CF33 /* TextAnnotatorMacUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48BC4B062960B9190099CF33 /* Build configuration list for PBXNativeTarget "TextAnnotatorMacUITests" */;
-			buildPhases = (
-				48BC4AF42960B9190099CF33 /* Sources */,
-				48BC4AF52960B9190099CF33 /* Frameworks */,
-				48BC4AF62960B9190099CF33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				48BC4AFA2960B9190099CF33 /* PBXTargetDependency */,
-			);
-			name = TextAnnotatorMacUITests;
-			productName = TextAnnotatorMacUITests;
-			productReference = 48BC4AF82960B9190099CF33 /* TextAnnotatorMacUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -529,6 +372,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					481463CD296A7C0900713721 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					48B087F9295FB787006A661F = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -542,17 +388,6 @@
 					};
 					48BC4AB9295FB8CE0099CF33 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					48BC4AD82960B9160099CF33 = {
-						CreatedOnToolsVersion = 14.2;
-					};
-					48BC4AED2960B9190099CF33 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 48BC4AD82960B9160099CF33;
-					};
-					48BC4AF72960B9190099CF33 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 48BC4AD82960B9160099CF33;
 					};
 				};
 			};
@@ -573,21 +408,29 @@
 				48B0880F295FB78A006A661F /* TextAnnotatorTests */,
 				48B08819295FB78A006A661F /* TextAnnotatorUITests */,
 				48BC4AB9295FB8CE0099CF33 /* TextAnnotator_backend_test */,
-				48BC4AD82960B9160099CF33 /* TextAnnotatorMac */,
-				48BC4AED2960B9190099CF33 /* TextAnnotatorMacTests */,
-				48BC4AF72960B9190099CF33 /* TextAnnotatorMacUITests */,
+				481463CD296A7C0900713721 /* MacText */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		481463CC296A7C0900713721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481463ED296A7CD200713721 /* index.html in Resources */,
+				481463D8296A7C0A00713721 /* Preview Assets.xcassets in Resources */,
+				481463D5296A7C0A00713721 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48B087F8295FB787006A661F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481463EA296A7CD200713721 /* index.html in Resources */,
 				48B0880B295FB78A006A661F /* Preview Assets.xcassets in Resources */,
 				48B08807295FB78A006A661F /* Assets.xcassets in Resources */,
-				48BC4AB4295FB8090099CF33 /* ContentViewDump.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481463EB296A7CD200713721 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,56 +446,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BC4AD72960B9160099CF33 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48BC4AE32960B9190099CF33 /* Preview Assets.xcassets in Resources */,
-				48BC4AE02960B9190099CF33 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BC4AEC2960B9190099CF33 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BC4AF62960B9190099CF33 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				481463EC296A7CD200713721 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		481463CA296A7C0900713721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481463DD296A7C5D00713721 /* TokenWebView.swift in Sources */,
+				481463DE296A7C5D00713721 /* LoadFiles.swift in Sources */,
+				481463DF296A7C5D00713721 /* UserPreferences.swift in Sources */,
+				481463E0296A7C5D00713721 /* ParseFiles.swift in Sources */,
+				481463E2296A7C5D00713721 /* Persistence.swift in Sources */,
+				4882A526296A9D39005D672E /* LazyGlobalVars.swift in Sources */,
+				481463E7296A7C5D00713721 /* ContentView.swift in Sources */,
+				481463D1296A7C0900713721 /* MacTextApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48B087F6295FB787006A661F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48BC4AC82960A90E0099CF33 /* GetContentPage.swift in Sources */,
-				4844EB542961FCEE002E3D0D /* RegexExtension.swift in Sources */,
-				4844EB6329622E40002E3D0D /* FactoryProduct.swift in Sources */,
 				48B087FE295FB787006A661F /* TextAnnotatorApp.swift in Sources */,
 				48BC4AC52960A8AE0099CF33 /* ParseFiles.swift in Sources */,
-				48BC4ACD2960AE490099CF33 /* WordToken.swift in Sources */,
-				48BC4ACB2960AA3B0099CF33 /* Toolbar.swift in Sources */,
-				4844EB5A29622B4D002E3D0D /* WordTokenFactory.swift in Sources */,
 				48BC4ACF2960AF780099CF33 /* UserPreferences.swift in Sources */,
+				4882A522296A9D39005D672E /* LazyGlobalVars.swift in Sources */,
 				48BC4AC2295FB9210099CF33 /* LoadFiles.swift in Sources */,
+				481463BE296A715900713721 /* ContentView.swift in Sources */,
 				48B08803295FB787006A661F /* TextAnnotator.xcdatamodeld in Sources */,
-				4844EB5D29622C5F002E3D0D /* FactoryProtocol.swift in Sources */,
-				48BC4AD12960B02E0099CF33 /* AddAnnotationHinter.swift in Sources */,
-				4844EB6129622DE1002E3D0D /* CompositeFactory.swift in Sources */,
-				48B08805295FB787006A661F /* ContentView.swift in Sources */,
-				48BC4AD42960B2170099CF33 /* Word_Token_View.swift in Sources */,
 				48B08800295FB787006A661F /* Persistence.swift in Sources */,
+				481463AD296A6BA500713721 /* TokenWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B08815295FB78A006A661F /* TextAnnotatorTests.swift in Sources */,
+				4882A523296A9D39005D672E /* LazyGlobalVars.swift in Sources */,
+				481463BF296A715900713721 /* ContentView.swift in Sources */,
+				481463AE296A6BA500713721 /* TokenWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,8 +498,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B08821295FB78A006A661F /* TextAnnotatorUITestsLaunchTests.swift in Sources */,
-				48B0881F295FB78A006A661F /* TextAnnotatorUITests.swift in Sources */,
+				4882A524296A9D39005D672E /* LazyGlobalVars.swift in Sources */,
+				481463C0296A715900713721 /* ContentView.swift in Sources */,
+				481463AF296A6BA500713721 /* TokenWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,54 +508,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4844EB5629620BF5002E3D0D /* RegexExtension.swift in Sources */,
 				4844EB512960D6CF002E3D0D /* UserPreferences.swift in Sources */,
-				4844EB522960D6CF002E3D0D /* WordToken.swift in Sources */,
 				48BC4AC62960A8CE0099CF33 /* ParseFiles.swift in Sources */,
+				4882A525296A9D39005D672E /* LazyGlobalVars.swift in Sources */,
 				48BC4AC32960A3F80099CF33 /* LoadFiles.swift in Sources */,
 				48BC4ABD295FB8CE0099CF33 /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BC4AD52960B9160099CF33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4844EB6429622EDD002E3D0D /* CompositeFactory.swift in Sources */,
-				4844EB6529622EDD002E3D0D /* FactoryProduct.swift in Sources */,
-				4844EB5E29622D5F002E3D0D /* WordTokenFactory.swift in Sources */,
-				4844EB5F29622D5F002E3D0D /* FactoryProtocol.swift in Sources */,
-				4844EB5729621C03002E3D0D /* RegexExtension.swift in Sources */,
-				48BC4B092960B9660099CF33 /* LoadFiles.swift in Sources */,
-				48BC4B0A2960B9660099CF33 /* UserPreferences.swift in Sources */,
-				48BC4B0B2960B9660099CF33 /* ParseFiles.swift in Sources */,
-				48BC4B0C2960B9660099CF33 /* WordToken.swift in Sources */,
-				48BC4B0D2960B9660099CF33 /* TextAnnotatorApp.swift in Sources */,
-				48BC4B0E2960B9660099CF33 /* Persistence.swift in Sources */,
-				48BC4B0F2960B9660099CF33 /* ContentViewDump.txt in Sources */,
-				48BC4B102960B9660099CF33 /* ContentView.swift in Sources */,
-				48BC4B112960B9660099CF33 /* Word_Token_View.swift in Sources */,
-				48BC4B122960B9660099CF33 /* GetContentPage.swift in Sources */,
-				48BC4B132960B9660099CF33 /* Toolbar.swift in Sources */,
-				48BC4B142960B9660099CF33 /* AddAnnotationHinter.swift in Sources */,
-				48BC4B172960B9660099CF33 /* TextAnnotator.xcdatamodeld in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BC4AEA2960B9190099CF33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48BC4AF32960B9190099CF33 /* TextAnnotatorMacTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BC4AF42960B9190099CF33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48BC4AFF2960B9190099CF33 /* TextAnnotatorMacUITestsLaunchTests.swift in Sources */,
-				48BC4AFD2960B9190099CF33 /* TextAnnotatorMacUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,19 +529,67 @@
 			target = 48B087F9295FB787006A661F /* TextAnnotator */;
 			targetProxy = 48B0881B295FB78A006A661F /* PBXContainerItemProxy */;
 		};
-		48BC4AF02960B9190099CF33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48BC4AD82960B9160099CF33 /* TextAnnotatorMac */;
-			targetProxy = 48BC4AEF2960B9190099CF33 /* PBXContainerItemProxy */;
-		};
-		48BC4AFA2960B9190099CF33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48BC4AD82960B9160099CF33 /* TextAnnotatorMac */;
-			targetProxy = 48BC4AF92960B9190099CF33 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		481463DB296A7C0A00713721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacText/MacText.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacText/Preview Content\"";
+				DEVELOPMENT_TEAM = 48WBG83D33;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MacText.MacText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		481463DC296A7C0A00713721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacText/MacText.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacText/Preview Content\"";
+				DEVELOPMENT_TEAM = 48WBG83D33;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MacText.MacText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		48B08822295FB78A006A661F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1048,147 +885,18 @@
 			};
 			name = Release;
 		};
-		48BC4B012960B9190099CF33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TextAnnotatorMac/TextAnnotatorMac.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TextAnnotatorMac/Preview Content\"";
-				DEVELOPMENT_TEAM = 48WBG83D33;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kecoding.TextAnnotatorMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		48BC4B022960B9190099CF33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TextAnnotatorMac/TextAnnotatorMac.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TextAnnotatorMac/Preview Content\"";
-				DEVELOPMENT_TEAM = 48WBG83D33;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kecoding.TextAnnotatorMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		48BC4B042960B9190099CF33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 48WBG83D33;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kecoding.TextAnnotatorMacTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextAnnotatorMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TextAnnotatorMac";
-			};
-			name = Debug;
-		};
-		48BC4B052960B9190099CF33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 48WBG83D33;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kecoding.TextAnnotatorMacTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextAnnotatorMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TextAnnotatorMac";
-			};
-			name = Release;
-		};
-		48BC4B072960B9190099CF33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 48WBG83D33;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kecoding.TextAnnotatorMacUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = TextAnnotatorMac;
-			};
-			name = Debug;
-		};
-		48BC4B082960B9190099CF33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 48WBG83D33;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kecoding.TextAnnotatorMacUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = TextAnnotatorMac;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		481463DA296A7C0A00713721 /* Build configuration list for PBXNativeTarget "MacText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481463DB296A7C0A00713721 /* Debug */,
+				481463DC296A7C0A00713721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		48B087F5295FB787006A661F /* Build configuration list for PBXProject "TextAnnotator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1234,41 +942,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48BC4B002960B9190099CF33 /* Build configuration list for PBXNativeTarget "TextAnnotatorMac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				48BC4B012960B9190099CF33 /* Debug */,
-				48BC4B022960B9190099CF33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		48BC4B032960B9190099CF33 /* Build configuration list for PBXNativeTarget "TextAnnotatorMacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				48BC4B042960B9190099CF33 /* Debug */,
-				48BC4B052960B9190099CF33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		48BC4B062960B9190099CF33 /* Build configuration list for PBXNativeTarget "TextAnnotatorMacUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				48BC4B072960B9190099CF33 /* Debug */,
-				48BC4B082960B9190099CF33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4844EB4D2960CF1A002E3D0D /* WrappingHStack */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = WrappingHStack;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		48B08801295FB787006A661F /* TextAnnotator.xcdatamodeld */ = {
@@ -1278,16 +952,6 @@
 			);
 			currentVersion = 48B08802295FB787006A661F /* TextAnnotator.xcdatamodel */;
 			path = TextAnnotator.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		48BC4AE62960B9190099CF33 /* TextAnnotatorMac.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				48BC4AE72960B9190099CF33 /* TextAnnotatorMac.xcdatamodel */,
-			);
-			currentVersion = 48BC4AE72960B9190099CF33 /* TextAnnotatorMac.xcdatamodel */;
-			path = TextAnnotatorMac.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

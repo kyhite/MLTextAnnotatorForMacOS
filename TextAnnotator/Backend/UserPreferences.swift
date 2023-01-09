@@ -9,93 +9,104 @@ import Foundation
 import SwiftUI
 
 class UserPreferences {
-//    var Annotations : [String:Color] = ["\\d":Color.red]
+//    var Annotati ons : [RegexChanger]
     var TextColorDefault = Color.black
     var BackgroundColorDefault = Color.clear
     var TextSpacing: CGFloat = 100.0
     var regexDelimiter = "*^&#"
-    var compositeFactory = CompositeFactory()
-    func makeNewProduct(productType:String, text: String) -> UnsafeMutablePointer<WordToken> {
-        var factory = WordTokenFactory()
-        var newWordToken = factory.newPtr(text: text)
-        return newWordToken
+
+    
+    var Annotations : [[String: String ]] {
+        var annotations : [[String:String]] = []
+        for a in Annotators {
+            var style = ""
+            if a["foregroundColor"] != nil {
+                style += "color:" + a["foregroundColor"]! + ";"
+            }
+            if a["backgroundColor"] != nil {
+                style += "background:" + a["backgroundColor"]! + ";"
+            }
+            var newA = ["pattern": String(a["pattern"]!)]
+            if style != "" {
+                newA["style"] = "style=\"\(style)\""
+            }
+            annotations.append(newA)
+        }
+        
+        return annotations
         
     }
+    var Annotators : [[String:String]] = [
+        ["pattern":"\\W(genesis)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(exodus)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(leviticus)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(numbers)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(deuteronomy)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(joshua)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(judges)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(ruth)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(samuel)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(kings)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(chronicles)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(ezra)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(nehemiah)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(tobit)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(judith)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(esther)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(maccabees)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(job)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(psalms)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(proverbs)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(ecclesiastes)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"song of songs", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(wisdom)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(ecclesiasticus)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+        
+        ["pattern":"\\W(sirach)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+     
+    ["pattern":"\\W(isaiah)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(jeremiah)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(lamentations)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(baruch)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(ezekiel)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(daniel)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(hosea)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(joel)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(amos)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(obadiah)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(jonah)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(micah)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(nahum)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(habakkuk)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(zephaniah)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(haggai)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(zechariah)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(malachi)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(matthew)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(mark)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(luke)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(john)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"acts of the Apostles", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(acts)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(romans)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
     
+    ["pattern":"\\W(corinthians)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(galatians)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(ephesians)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(philippians)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(colossians)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(thessalonians)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
     
-    
-    var Annotations : [String:Color] = ["genesis": Color.blue,
-    "exodus": Color.blue,
-    "leviticus": Color.blue,
-    "numbers": Color.blue,
-    "deuteronomy": Color.blue,
-    "joshua": Color.blue,
-    "judges": Color.blue,
-    "ruth": Color.blue,
-    "samuel": Color.blue,
-    "kings": Color.blue,
-    "chronicles": Color.blue,
-    "ezra": Color.blue,
-    "nehemiah": Color.blue,
-    "tobit": Color.blue,
-    "judith": Color.blue,
-    "esther": Color.blue,
-    "maccabees": Color.blue,
-    "job": Color.blue,
-    "psalms": Color.blue,
-    "proverbs": Color.blue,
-    "ecclesiastes": Color.blue,
-    "song of songs": Color.blue,
-    "wisdom": Color.blue,
-    "ecclesiasticus": Color.blue,
-     "sirach" : Color.blue,
-    "isaiah": Color.blue,
-    "jeremiah": Color.blue,
-    "lamentations": Color.blue,
-    "baruch": Color.blue,
-    "ezekiel": Color.blue,
-    "daniel": Color.blue,
-    "hosea": Color.blue,
-    "joel": Color.blue,
-    "amos": Color.blue,
-    "obadiah": Color.blue,
-    "jonah": Color.blue,
-    "micah": Color.blue,
-    "nahum": Color.blue,
-    "habakkuk": Color.blue,
-    "zephaniah": Color.blue,
-    "haggai": Color.blue,
-    "zechariah": Color.blue,
-    "malachi": Color.blue,
-    "matthew":Color.blue,
-    "mark":Color.blue,
-    "luke":Color.blue,
-    "john":Color.blue,
-    "acts of the Apostles":Color.blue,
-    "acts":Color.blue,
-    "romans":Color.blue,
-    
-    "corinthians":Color.blue,
-    "galatians":Color.blue,
-    "ephesians":Color.blue,
-    "philippians":Color.blue,
-    "colossians":Color.blue,
-    "thessalonians":Color.blue,
-    
-    "timothy":Color.blue,
-    "titus":Color.blue,
-    "philemon":Color.blue,
-    "hebrews":Color.blue,
-    "james":Color.blue,
-    "peter":Color.blue,
-    "revelation":Color.blue,
-                                        "\\d+": Color.red
-    
+    ["pattern":"\\W(timothy)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(titus)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(philemon)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(hebrews)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(james)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(peter)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+    ["pattern":"\\W(revelation)\\W", "foregroundColor": "blue", "backgroundColor":"red"],
+        ["pattern":"\\W(\\d+)\\W", "foregroundColor":"yellow", "backgroundColor": "green"]
     ]
     
 }
 
 var preferences = UserPreferences()
-/*
- 
- */
