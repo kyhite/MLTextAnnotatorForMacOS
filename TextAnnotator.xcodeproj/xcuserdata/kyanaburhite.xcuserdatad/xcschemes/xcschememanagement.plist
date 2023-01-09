@@ -4,24 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MacText.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>TextAnnotator.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>TextAnnotatorMac.xcscheme_^#shared#^_</key>
+		<key>TextAnnotator_backend_test.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>TextAnnotator_backend_test.xcscheme_^#shared#^_</key>
+		<key>TextViewTester.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4844EB6C2964E0D9002E3D0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>48B087F9295FB787006A661F</key>
 		<dict>
 			<key>primary</key>
@@ -33,6 +49,11 @@
 			<true/>
 		</dict>
 		<key>48B08819295FB78A006A661F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48BC4AB9295FB8CE0099CF33</key>
 		<dict>
 			<key>primary</key>
 			<true/>

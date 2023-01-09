@@ -2,29 +2,34 @@
 //  ContentView.swift
 //  TextAnnotator
 //
-//  Created by Kyana Burhite on 12/30/22.
+//  Created by Kyana Burhite on 1/7/23.
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
-    var editorPath = AnnotationFileLoader.ReadTextFile(p: "/Users/kyanaburhite/Downloads/18.txt")
-//    var editorPath = "this is the song that never ends - it just goes on and on my friend . 1 people started singing it not knowing what it was, but 2 they just kept on singing it forever just because 333"
+    @State var texts: [[String: String]] = [["text" : "This is one song that never ends... it just goes on and on my friend"] , ["text" : captions]]
+    @State var b  = true;
+//    @State var texts: [String: [String]] = ["texts": ["This is one song that never ends... it just goes on and on my friend", "Well some people started singing it not knowing what it was, and they just kept on singing it forever just because."]]
+//    @State var texts: [String] = ["This is one song that never ends... it just goes on and on my friend", "Well some people started singing it not knowing what it was, and they just kept on singing it forever just because."]
     var body: some View {
-
-        GetContentPage(fromPath: editorPath)
-            .toolbar {
-                Button {
-                    print("hello")
-                } label: {
-                    Text("Hello world!")
-                }
-
-            }
-
+        
+        VStack {
+            Toggle("hahahaha", isOn: $b)
+            WebView(texts: $texts)
+        }.onChange(of: b) { newValue in
+            texts = [["text" : "This is one song that never ends... it just goes on and on my friend"], ["text": makeCaption()]]
+        }
     }
-
+    func makeCaption() -> String{
+        print("caption!!!")
+        if b {
+            return captions
+        } else {
+            return contents2
+        }
+        
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

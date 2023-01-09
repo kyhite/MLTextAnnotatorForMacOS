@@ -1,0 +1,75 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script type="module" src="./regex.js"></script> -->
+    <script>
+
+        
+function allRegexes(pattern, string) {
+            var reg = new RegExp(pattern, "g");
+            items = string.match(reg);
+            console.log(items);
+            return items;
+        }
+        function getRegs(first, second) {
+            var strs = "";
+            try {
+
+                var stru = first.text;
+
+                for (var s = 0; s < second.length; s++) {
+                    var pattern = second[s].pattern;
+                    var struf =stru;
+                    strs += "<br> pattern=" + pattern + "====";
+                    try{
+                        var regulars = allRegexes(pattern, stru);
+                        // strs += JSON.stringify(regulars);
+                        for(var r = 0; r < regulars.length; r++) {
+                            stru = stru.replace(regulars[r], " <span " + second[s].style + ">"+ regulars[r].trim() + "</span> ");
+                        }
+                }
+
+                    catch(eru) {
+                        
+
+                    }
+                }
+                strs += stru;
+        } catch (err) {
+        }
+            return stru;
+        }
+        
+        function readContents(first, second) {
+
+            html = ""
+
+            for (var i = 0; i < first.length; i++) {
+                html += getRegs(first[i], second);
+            }
+            document.getElementById("node-holder").innerHTML = html;
+        }
+        
+         function makeContents(first, second) {
+                    document.getElementById("node-holder").innerText =  getRegs(first, second);
+                    return;
+                }
+    </script>
+</head>
+
+<body>
+    <div id="node-bar">
+
+    </div>
+
+    <div id="node-holder">
+    </div>
+</body>
+
+
+<script>
+    readContents(###)
+</script>
+</html>
