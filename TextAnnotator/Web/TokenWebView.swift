@@ -9,10 +9,28 @@ import Foundation
 
 import SwiftUI
 import WebKit
-
+class TokenContentController: NSObject, WKScriptMessageHandler {
+    var webView: WebView!
+    var splittingRange:String = ""
+    func webView(webView: WebView) {
+        self.webView = webView
+        
+    }
+        func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+            print(#function)
+            print(message.body)
+//            self.splittingRange = (message.body as! String)
+            self.webView.splittingSet = message.body as! String
+        }
+    }
 struct WebView: NSViewRepresentable {
     @Binding var texts: [[String: String]]
+    @Binding var splittingSet : String
 //    @Binding var texts: [String]
+    var contentController  = TokenContentController()
+    
+    
+    
 //    @Binding var texts:
     
     func jsonArguments() -> String{
@@ -21,23 +39,13 @@ struct WebView: NSViewRepresentable {
         var first = ""
         var second = ""
         do {
-            
             first = try! String(data:decoder.encode(texts), encoding: .utf8)!
-            
-            
         }
-//        catch {
-//            return ":("
-//        }
         do {
             second = try! String(data:decoder.encode(preferences.Annotations), encoding: .utf8)!
-            print(second)
+//            print(second)
 
         }
-//        catch {
-//            return ":("
-//        }
-        
         return first + "," + second
         
     }
@@ -53,51 +61,35 @@ struct WebView: NSViewRepresentable {
             return text
         } catch {
             return "<html><body>alexa this is so sad, play despacito</body></html>"
-//            webView.loadHTMLString("<html><body>alexa this is so sad, play despacito</body></html>", baseURL: nil)
         }
     }
     func makeNSView(context: Context) -> WKWebView {
-        
-        
-        var webView = WKWebView()
-//        print(Bundle.main.resourceURL?.absoluteString)
-//        let url = URL(string: "http://localhost:8080/MLTextAnnotatorJavascript")
-        
-//        let url = URL(string: Bundle.main.resourceURL!.absoluteString + "Website/index.html")!
+        contentController.webView = self
+        var config = WKWebViewConfiguration()
+        config.userContentController.add(contentController, name: "newSelectionDetected")
+        let webView = WKWebView(frame: .zero, configuration: config)
         let text = makeText()
         webView.loadHTMLString(text, baseURL: nil)
-//        do {
-//            let path = Bundle.main.resourcePath! + "/index.html"
-////            print(path)
-//
-//            var text = try String(contentsOfFile:path)
-//
-//            text = text.replacingOccurrences(of: "###", with: "\(jsonArguments())")
-//
-//            webView.loadHTMLString(text, baseURL: nil)
-//        } catch {
-//            webView.loadHTMLString("<html><body>alexa this is so sad, play despacito</body></html>", baseURL: nil)
-//        }
-//        webView.loadFileURL(url!, allowingReadAccessTo: url!)
-//        let request = URLRequest(url: url!)
-//        webView.load(request)
-//        webView.evaluateJavaScript("readContents(\(texts));")
-//
-//        webView.callAsyncJavaScript("readContents",arguments: ["texts": texts],  in: nil, in: WKContentWorld.page)
         
         return webView
     }
     
     func updateNSView(_ nsView: WKWebView, context: Context) {
         print("UPDATE!")
-        var text = makeText()
+//        print(nsView.configuration.preferences)
+//        webView.
+//        print(nsView.scrollView)
+        let text = makeText()
         nsView.loadHTMLString(text, baseURL: nil)
         
     }
+    func fakeCopy() {
+        print("this is a copy!")
+    }
+    
+ 
     
     
-    
-    
-    typealias NSViewType = WKWebView
+//    typealias NSViewType = WKWebView
     
 }

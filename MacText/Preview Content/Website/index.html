@@ -2,10 +2,13 @@
 
 <head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
     <!-- <script type="module" src="./regex.js"></script> -->
     <script>
-
+    // function see_window() {
+    //     document.innerHTML = JSON.stringify(window);
+    // }
+    
         
 function allRegexes(pattern, string) {
             var reg = new RegExp(pattern, "g");
@@ -49,6 +52,8 @@ function allRegexes(pattern, string) {
             for (var i = 0; i < first.length; i++) {
                 html += getRegs(first[i], second);
             }
+            html += "<br>WEBKIT =" +  JSON.stringify(document);
+            html += "<br>WEBKIT2 =" +  JSON.stringify(window.webkit);
             document.getElementById("node-holder").innerHTML = html;
         }
         
@@ -71,5 +76,18 @@ function allRegexes(pattern, string) {
 
 <script>
     readContents(###)
+</script>
+<script>
+    function getSelectionAndSendMessage()
+    {
+        var txt = document.getSelection().getRangeAt(0)
+        
+        window.webkit.messageHandlers.newSelectionDetected.postMessage(JSON.stringify({"start": txt.startOffset, "end": txt.endOffset}));
+        // window.webkit.messageHandlers.newSelectionDetected.postMessage(txt.;
+
+    }
+    document.onmouseup = getSelectionAndSendMessage;
+    document.onkeyup = getSelectionAndSendMessage;
+    document.oncontextmenu = getSelectionAndSendMessage;
 </script>
 </html>

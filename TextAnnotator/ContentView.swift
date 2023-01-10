@@ -16,7 +16,8 @@ struct ContentView: View {
         
         VStack {
             Toggle("hahahaha", isOn: $b)
-            WebView(texts: $texts)
+//            WebView(texts: $texts)
+            ContentSplitView(texts: $texts)
         }.onChange(of: b) { newValue in
             texts = [["text" : "This is one song that never ends... it just goes on and on my friend"], ["text": makeCaption()]]
         }
