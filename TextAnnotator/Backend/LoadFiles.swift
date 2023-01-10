@@ -8,6 +8,15 @@
 import Foundation
 
 class AnnotationFileLoader {
+    static func createInitialToken(text: String) -> TextToken {
+        let token = TextToken(text: text)
+        return token
+    }
+    static func createInitialToken(textPath: String) -> TextToken {
+        let str = ReadTextFile(p: textPath)
+        let token = TextToken(text: str)
+        return token
+    }
     
     static func ReadTextFile(p : String) -> String {
         var str: String = ""

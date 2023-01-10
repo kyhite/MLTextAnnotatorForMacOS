@@ -35,6 +35,8 @@
 		48562395296BCB3E00544280 /* ContentSplitBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856238F296BC90100544280 /* ContentSplitBar.swift */; };
 		48562397296BD2FD00544280 /* TokenRepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48562396296BD2FD00544280 /* TokenRepresentableView.swift */; };
 		48562398296BD32A00544280 /* TokenRepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48562396296BD2FD00544280 /* TokenRepresentableView.swift */; };
+		4856239E296CF19F00544280 /* TextToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856239D296CF19F00544280 /* TextToken.swift */; };
+		4856239F296CF60200544280 /* TextToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856239D296CF19F00544280 /* TextToken.swift */; };
 		4882A522296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
 		4882A523296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
 		4882A524296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
@@ -98,6 +100,7 @@
 		4856238F296BC90100544280 /* ContentSplitBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSplitBar.swift; sourceTree = "<group>"; };
 		48562391296BCA0D00544280 /* AnnotationSideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationSideBarView.swift; sourceTree = "<group>"; };
 		48562396296BD2FD00544280 /* TokenRepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRepresentableView.swift; sourceTree = "<group>"; };
+		4856239D296CF19F00544280 /* TextToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToken.swift; sourceTree = "<group>"; };
 		4882A521296A9D39005D672E /* LazyGlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGlobalVars.swift; sourceTree = "<group>"; };
 		4882A527296AAEAE005D672E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		48B087FA295FB787006A661F /* TextAnnotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnnotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +213,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4856239A296CF06500544280 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4856239D296CF19F00544280 /* TextToken.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4882A520296A8E5D005D672E /* Website */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +283,7 @@
 		48BC4AB5295FB85D0099CF33 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				4856239A296CF06500544280 /* Models */,
 				4844EB552961FD28002E3D0D /* Extensions */,
 				48BC4AC1295FB9210099CF33 /* LoadFiles.swift */,
 				48BC4ACE2960AF780099CF33 /* UserPreferences.swift */,
@@ -473,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4856239F296CF60200544280 /* TextToken.swift in Sources */,
 				48562393296BCB3E00544280 /* ContentSplitView.swift in Sources */,
 				48562394296BCB3E00544280 /* AnnotationSideBarView.swift in Sources */,
 				48562395296BCB3E00544280 /* ContentSplitBar.swift in Sources */,
@@ -496,6 +509,7 @@
 				48BC4AC52960A8AE0099CF33 /* ParseFiles.swift in Sources */,
 				48562392296BCA0D00544280 /* AnnotationSideBarView.swift in Sources */,
 				48BC4ACF2960AF780099CF33 /* UserPreferences.swift in Sources */,
+				4856239E296CF19F00544280 /* TextToken.swift in Sources */,
 				4882A522296A9D39005D672E /* LazyGlobalVars.swift in Sources */,
 				48BC4AC2295FB9210099CF33 /* LoadFiles.swift in Sources */,
 				4856238E296BC8F000544280 /* ContentSplitView.swift in Sources */,

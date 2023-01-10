@@ -9,32 +9,14 @@ import Foundation
 
 import SwiftUI
 import WebKit
-class TokenContentController: NSObject, WKScriptMessageHandler {
-    var webView: WebView!
-    var splittingRange:String = ""
-    func webView(webView: WebView) {
-        self.webView = webView
-        
-    }
-        func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-            print(#function)
-            print(message.body)
-//            self.splittingRange = (message.body as! String)
-            self.webView.splittingSet = message.body as! String
-        }
-    }
+
 struct WebView: NSViewRepresentable {
     @Binding var texts: [[String: String]]
     @Binding var splittingSet : String
-//    @Binding var texts: [String]
+
     var contentController  = TokenContentController()
-    
-    
-    
-//    @Binding var texts:
-    
     func jsonArguments() -> String{
-//        print("Here!")
+
         let decoder = JSONEncoder()
         var first = ""
         var second = ""
@@ -43,11 +25,8 @@ struct WebView: NSViewRepresentable {
         }
         do {
             second = try! String(data:decoder.encode(preferences.Annotations), encoding: .utf8)!
-//            print(second)
-
         }
         return first + "," + second
-        
     }
     func makeText() -> String {
         do {
