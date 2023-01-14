@@ -16,7 +16,7 @@ import SwiftUI
 struct TokenSplitTextRange {
     var begin : Int
     var end : Int
-    var idx : Int
+    var id : String
     
 }
 class TextToken : Identifiable{
@@ -53,5 +53,13 @@ extension TextToken {
         tokens.wrappedValue.insert(TextToken(text: String(after)), at: index! + 1)
 //
         self.text = String(during)
+    }
+    
+    func setText(text: String) {
+        self.text = text
+    }
+    
+    func getObject()  -> [String: String]{
+        return ["text": self.text, "id": self.id.uuidString]
     }
 }

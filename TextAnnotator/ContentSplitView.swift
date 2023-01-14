@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentSplitView: View {
-    @Binding var texts: [[String:String]]
+    @Binding var texts: TextTokenContainer
     @State private var splittingSet = ""
+    
     var body: some View {
         NavigationSplitView {
             
@@ -36,6 +37,6 @@ struct ContentSplitView: View {
 
 struct ContentSplitView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentSplitView(texts: .constant([["hello": "world"]]))
+        ContentSplitView(texts: .constant(TextTokenContainer(container: [])))
     }
 }

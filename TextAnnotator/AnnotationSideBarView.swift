@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct AnnotationSideBarView: View {
-    var v: [String: String]
+    @Binding var v: RegexPattern
     var body: some View {
-        Text("\(v["pattern"]!)")
+        Text("\(v.pattern)")
+            .foregroundColor(ColorTranslator.string2Color(str: v.foregroundColor))
+            .listRowBackground(ColorTranslator.string2Color(str: v.backgroundColor))
+            
+            
     }
 }
 
-struct AnnotationSideBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        AnnotationSideBarView(v: ["hello": "world"])
-    }
-}
+//struct AnnotationSideBarView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AnnotationSideBarView(v: ["hello": "world"])
+//    }
+//}

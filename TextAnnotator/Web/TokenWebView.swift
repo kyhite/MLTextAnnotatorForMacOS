@@ -11,7 +11,7 @@ import SwiftUI
 import WebKit
 
 struct WebView: NSViewRepresentable {
-    @Binding var texts: [[String: String]]
+    @Binding var texts: TextTokenContainer
     @Binding var splittingSet : String
 
     var contentController  = TokenContentController()
@@ -21,10 +21,12 @@ struct WebView: NSViewRepresentable {
         var first = ""
         var second = ""
         do {
-            first = try! String(data:decoder.encode(texts), encoding: .utf8)!
+            first = try! String(data:decoder.encode(texts.getObjects()), encoding: .utf8)!
+            
         }
         do {
-            second = try! String(data:decoder.encode(preferences.Annotations), encoding: .utf8)!
+            second = try! String(data:decoder.encode(preferences.Annotations.getObjects()), encoding: .utf8)!
+            print("second.count!!!\(preferences.Annotations.getObjects().count)")
         }
         return first + "," + second
     }
