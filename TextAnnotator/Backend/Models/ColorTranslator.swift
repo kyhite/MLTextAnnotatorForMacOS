@@ -6,13 +6,14 @@
 //
 
 import Foundation
+#if MAC_TEXT
 import SwiftUI
 
 struct ColorTranslator {
     static func string2Color(str: String) -> Color{
+        
         if str == "red" {
             return Color.red
-            
         } else if str == "blue" {
             return Color.blue
         } else if str == "green" {
@@ -27,3 +28,4 @@ struct ColorTranslator {
         }
     }
 }
+#endif

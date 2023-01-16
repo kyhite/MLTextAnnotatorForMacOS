@@ -19,7 +19,7 @@
 		<key>TextAnnotator_backend_test.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
@@ -33,6 +33,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>481463CD296A7C0900713721</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4844EB6C2964E0D9002E3D0D</key>
 		<dict>
 			<key>primary</key>

@@ -11,7 +11,7 @@ struct ContentSplitBar: View {
     @State private var annotations = preferences.Annotations.patterns
     var body: some View {
         List($annotations, id:\.self) { annot in
-            AnnotationSideBarView(v: annot).listRowSeparator(.visible)
+            AnnotationSideBarItemView(v: annot).listRowSeparator(.visible)
         }.navigationTitle("annotations").onChange(of: annotations) { newValue in
             preferences.Annotations.patterns = annotations
         }

@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct AnnotationSideBarView: View {
+struct AnnotationSideBarItemView: View {
+//    print(#sourceLocatopn)
     @Binding var v: RegexPattern
     var body: some View {
         Text("\(v.pattern)")

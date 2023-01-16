@@ -50,10 +50,9 @@ function allRegexes(pattern, string) {
             html = ""
 
             for (var i = 0; i < first.length; i++) {
-                html += getRegs(first[i], second);
+                html += "<spanNode>" + getRegs(first[i], second) + "</spanNode>";
             }
-            html += "<br>WEBKIT =" +  JSON.stringify(document);
-            html += "<br>WEBKIT2 =" +  JSON.stringify(window.webkit);
+            
             document.getElementById("node-holder").innerHTML = html;
         }
         
@@ -81,8 +80,9 @@ function allRegexes(pattern, string) {
     function getSelectionAndSendMessage()
     {
         var txt = document.getSelection().getRangeAt(0)
+        var scr = document.body.scrollTop
         
-        window.webkit.messageHandlers.newSelectionDetected.postMessage(JSON.stringify({"start": txt.startOffset, "end": txt.endOffset}));
+        window.webkit.messageHandlers.newSelectionDetected.postMessage(JSON.stringify({"start": txt.startOffset, "end": txt.endOffset, "scrollTop": document.body.scrollTop}));
         // window.webkit.messageHandlers.newSelectionDetected.postMessage(txt.;
 
     }

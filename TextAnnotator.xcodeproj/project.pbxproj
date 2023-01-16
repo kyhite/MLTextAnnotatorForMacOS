@@ -43,6 +43,11 @@
 		4856239F296CF60200544280 /* TextToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856239D296CF19F00544280 /* TextToken.swift */; };
 		485623A1296CFCEB00544280 /* TextTokenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485623A0296CFCEB00544280 /* TextTokenContainer.swift */; };
 		485623A2296CFDF600544280 /* TextTokenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485623A0296CFCEB00544280 /* TextTokenContainer.swift */; };
+		48793ED72975051B0085C70C /* NSRegularExpressionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48793ED62975051B0085C70C /* NSRegularExpressionExtension.swift */; };
+		48793ED82975065A0085C70C /* NSRegularExpressionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48793ED62975051B0085C70C /* NSRegularExpressionExtension.swift */; };
+		48793ED92975110D0085C70C /* TextToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856239D296CF19F00544280 /* TextToken.swift */; };
+		48793EDA297511A40085C70C /* RegexWebHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485361F72971C1C4005CB290 /* RegexWebHolder.swift */; };
+		48793EDB297514710085C70C /* TextTokenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485623A0296CFCEB00544280 /* TextTokenContainer.swift */; };
 		4882A522296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
 		4882A523296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
 		4882A524296A9D39005D672E /* LazyGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882A521296A9D39005D672E /* LazyGlobalVars.swift */; };
@@ -110,6 +115,7 @@
 		48562396296BD2FD00544280 /* TokenRepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRepresentableView.swift; sourceTree = "<group>"; };
 		4856239D296CF19F00544280 /* TextToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToken.swift; sourceTree = "<group>"; };
 		485623A0296CFCEB00544280 /* TextTokenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTokenContainer.swift; sourceTree = "<group>"; };
+		48793ED62975051B0085C70C /* NSRegularExpressionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionExtension.swift; sourceTree = "<group>"; };
 		4882A521296A9D39005D672E /* LazyGlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGlobalVars.swift; sourceTree = "<group>"; };
 		4882A527296AAEAE005D672E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		48B087FA295FB787006A661F /* TextAnnotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnnotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,8 +224,18 @@
 		4844EB552961FD28002E3D0D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				48793ED62975051B0085C70C /* NSRegularExpressionExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4849486A2973767000E76AE8 /* SplitBarView */ = {
+			isa = PBXGroup;
+			children = (
+				4856238F296BC90100544280 /* ContentSplitBar.swift */,
+				48562391296BCA0D00544280 /* AnnotationSideBarView.swift */,
+			);
+			path = SplitBarView;
 			sourceTree = "<group>";
 		};
 		4856239A296CF06500544280 /* Models */ = {
@@ -227,6 +243,7 @@
 			children = (
 				4856239D296CF19F00544280 /* TextToken.swift */,
 				485361FA2971CC95005CB290 /* ColorTranslator.swift */,
+				485361F72971C1C4005CB290 /* RegexWebHolder.swift */,
 				485623A0296CFCEB00544280 /* TextTokenContainer.swift */,
 			);
 			path = Models;
@@ -276,8 +293,7 @@
 				48B08801295FB787006A661F /* TextAnnotator.xcdatamodeld */,
 				481463BD296A715900713721 /* ContentView.swift */,
 				4856238D296BC8F000544280 /* ContentSplitView.swift */,
-				48562391296BCA0D00544280 /* AnnotationSideBarView.swift */,
-				4856238F296BC90100544280 /* ContentSplitBar.swift */,
+				4849486A2973767000E76AE8 /* SplitBarView */,
 				48B08809295FB78A006A661F /* Preview Content */,
 			);
 			path = TextAnnotator;
@@ -298,7 +314,6 @@
 				4844EB552961FD28002E3D0D /* Extensions */,
 				48BC4AC1295FB9210099CF33 /* LoadFiles.swift */,
 				48BC4ACE2960AF780099CF33 /* UserPreferences.swift */,
-				485361F72971C1C4005CB290 /* RegexWebHolder.swift */,
 				48BC4AC42960A8AE0099CF33 /* ParseFiles.swift */,
 			);
 			path = Backend;
@@ -525,6 +540,7 @@
 				48BC4AC52960A8AE0099CF33 /* ParseFiles.swift in Sources */,
 				48562392296BCA0D00544280 /* AnnotationSideBarView.swift in Sources */,
 				48BC4ACF2960AF780099CF33 /* UserPreferences.swift in Sources */,
+				48793ED72975051B0085C70C /* NSRegularExpressionExtension.swift in Sources */,
 				4856239E296CF19F00544280 /* TextToken.swift in Sources */,
 				4882A522296A9D39005D672E /* LazyGlobalVars.swift in Sources */,
 				485361F82971C1C4005CB290 /* RegexWebHolder.swift in Sources */,
@@ -567,8 +583,12 @@
 				4844EB512960D6CF002E3D0D /* UserPreferences.swift in Sources */,
 				48BC4AC62960A8CE0099CF33 /* ParseFiles.swift in Sources */,
 				4882A525296A9D39005D672E /* LazyGlobalVars.swift in Sources */,
+				48793EDB297514710085C70C /* TextTokenContainer.swift in Sources */,
 				48BC4AC32960A3F80099CF33 /* LoadFiles.swift in Sources */,
+				48793ED92975110D0085C70C /* TextToken.swift in Sources */,
 				48BC4ABD295FB8CE0099CF33 /* main.swift in Sources */,
+				48793EDA297511A40085C70C /* RegexWebHolder.swift in Sources */,
+				48793ED82975065A0085C70C /* NSRegularExpressionExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MacText.MacText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG MAC_TEXT";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

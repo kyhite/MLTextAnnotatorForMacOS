@@ -11,7 +11,9 @@ import Foundation
 //
 
 import Foundation
+#if MAC_TEXT
 import SwiftUI
+#endif
 
 struct TokenSplitTextRange {
     var begin : Int
@@ -32,6 +34,7 @@ class TextToken : Identifiable{
     
 }
 extension TextToken {
+    #if MAC_TEXT
     func saveTexts(range: TokenSplitTextRange, tokens: Binding<[TextToken]>) {
         var index = tokens.firstIndex { $0.id == self.id
         }
@@ -54,6 +57,7 @@ extension TextToken {
 //
         self.text = String(during)
     }
+    #endif
     
     func setText(text: String) {
         self.text = text
@@ -61,5 +65,10 @@ extension TextToken {
     
     func getObject()  -> [String: String]{
         return ["text": self.text, "id": self.id.uuidString]
+    }
+    func makeHTML() -> String {
+        let html = ""
+        
+        return html
     }
 }

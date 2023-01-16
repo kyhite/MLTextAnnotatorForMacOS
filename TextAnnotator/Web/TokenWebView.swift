@@ -16,29 +16,22 @@ struct WebView: NSViewRepresentable {
 
     var contentController  = TokenContentController()
     func jsonArguments() -> String{
-
         let decoder = JSONEncoder()
         var first = ""
         var second = ""
         do {
             first = try! String(data:decoder.encode(texts.getObjects()), encoding: .utf8)!
-            
         }
         do {
             second = try! String(data:decoder.encode(preferences.Annotations.getObjects()), encoding: .utf8)!
-            print("second.count!!!\(preferences.Annotations.getObjects().count)")
         }
         return first + "," + second
     }
     func makeText() -> String {
         do {
             let path = Bundle.main.resourcePath! + "/index.html"
-//            print(path)
-        
             var text = try String(contentsOfFile:path)
-            
             text = text.replacingOccurrences(of: "###", with: "\(jsonArguments())")
-            
             return text
         } catch {
             return "<html><body>alexa this is so sad, play despacito</body></html>"
@@ -46,20 +39,16 @@ struct WebView: NSViewRepresentable {
     }
     func makeNSView(context: Context) -> WKWebView {
         contentController.webView = self
-        var config = WKWebViewConfiguration()
+        let config = WKWebViewConfiguration()
         config.userContentController.add(contentController, name: "newSelectionDetected")
         let webView = WKWebView(frame: .zero, configuration: config)
         let text = makeText()
         webView.loadHTMLString(text, baseURL: nil)
-        
         return webView
     }
     
     func updateNSView(_ nsView: WKWebView, context: Context) {
         print("UPDATE!")
-//        print(nsView.configuration.preferences)
-//        webView.
-//        print(nsView.scrollView)
         let text = makeText()
         nsView.loadHTMLString(text, baseURL: nil)
         

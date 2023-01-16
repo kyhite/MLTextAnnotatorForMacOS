@@ -10,6 +10,29 @@ import SwiftUI
 
 class FileParser {
     
+    static func makeHTML(str: String) {
+        var stringCopy = str
+        print(stringCopy)
+        let stru = "\\W?(\\d+)\\W?"
+        for pattern in preferences.Annotations.patterns {
+////            var strs = stringCopy.ma
+//            let reg = try! NSRegularExpression(pattern: pattern.pattern)
+            let ran = NSRange.init(stringCopy)
+            let strs = try! Regex.init(pattern.pattern)
+            let matches = stringCopy.ranges(of: strs)
+            print(matches)
+            var matches_strings = Set<String>()
+            for match in matches {
+                var newString = String.init( stringCopy.substring(with: match))
+                newString = try! newString.replacing(Regex("\\W"), with: "")
+//                newString = newString.repl
+                matches_strings.insert(stringCopy.substring(with: match))
+            }
+            print(matches_strings)
+        }
+        
+        
+    }
 //    static func makeNewToken(str:String) -> WordToken {
 //        
 //        var token = WordToken()
